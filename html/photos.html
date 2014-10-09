@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<div class="image">
+    <div class="fill" style="background-image:url('./img/headers/6.jpg');">       
+        <br> <p>Photos</p>
+    </div>
+</div>
+<div class="push"></div>
+<div class="push"></div>
+    <div class="container">
+        <center>
+            In a society like Med Revue, there are always so many moments to capture! Click on a year below to check out a selection of photos from that year.<br>
+            Many thanks to the photographers who have contributed their photos to this site: Chamara Kulatunge, Derek Salvador, Jerold Chan, Robin Chow, Shuqian Hon, Som Guan.<br>
+            If you would like to contribute some photos to this page, send us an email at webmin@medrevue.org!<br>
+                 {{photoController.number }} 
+        </center>
+        <br> 
+        <section id="least">
+        <div class="least-preview"></div>
+         <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">     
+                <li ng-repeat="image in photoController.images"> 
+                    <a href="{{ image.name }}"><img ng-src="{{image.name}}">
+                </li>
+  
+            </ul>
+       
+    </section>
+        
+   
+  
+        
+       
+    </div>
