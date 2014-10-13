@@ -207,3 +207,8 @@ html,body{height:100%;}
     font-size: 12px;
     background: #E6E6E6;
 }
+
+.padded { 
+    padding: 10px; 
+
+}

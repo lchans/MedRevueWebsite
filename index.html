@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href="css/least.min.css" rel="stylesheet">
     <link href="css/half-slider.css" rel="stylesheet">
 
@@ -36,7 +37,7 @@
                     <ul class="nav navbar-nav" id="left">
                    <li><a   ng-click="view.setPage(0)" href="#">Home</a></li>
                     <li><a  ng-click="view.setPage(1)" href="#">About</a></li>
-                    <li><a  ng-click="view.setPage(1)" href="#">Past Shows</a></li>
+                    <li><a  ng-click="view.setPage(6)" href="#">Past Shows</a></li>
                     <li><a  ng-click="view.setPage(2)" href="#">Teams</a></li>
                     <li><a  ng-click="view.setPage(3)" href="#">Photos</a></li>
                     <li><a  ng-click="view.setPage(4)" href="#">Sponsors</a></li>
@@ -87,6 +88,8 @@
         <about></about>
             <div class="push"></div>
     </div>
+    
+    
    <div ng-show="view.getPage(1)">
             <footer></footer>
   </div>
@@ -123,11 +126,12 @@
     
         <div class="box" ng-show="view.getPage(5)">
         <contact></contact>
-                    <div class="push"></div>
+                   
         </div>
             
-        <div ng-show="view.getPage(5)">
-
+        <div ng-show="view.getPage(6)">
+                    <shows></shows>
+                    <div class="push"></div>
         <footer></footer>
         </div>
 

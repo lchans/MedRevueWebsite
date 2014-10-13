@@ -95,6 +95,12 @@ app.directive('test', function () {
     }
 });
 
+app.directive('shows', function () { 
+    return { 
+        restrict: 'E',
+        templateUrl: 'html/shows.html'
+    }
+});
 
 
 var gallery = [ 
